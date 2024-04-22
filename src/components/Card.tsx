@@ -1,13 +1,13 @@
 export async function getStaticProps() {
-  const data = await fetch('https://localhost:8080/match').then(res => res.json());
-  console.log(data);
+  const cards = await fetch("https://localhost:8080/match").then(res => res.json());
+  console.log(cards);
 }
 
 export function Card() {
   
   return (
     <div>
-      <div className="max-w-md rounded overflow-hidden shadow-lg">
+      <div className="max-w-md rounded overflow-hidden shadow-lg mt-4">
         <div className="px-4 py-4">
           <div className="flex flex-wrap gap-4 justify-center">
             <div className="">
